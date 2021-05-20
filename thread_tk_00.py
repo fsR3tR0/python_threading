@@ -41,6 +41,8 @@ def th_tk():
 def btn_exit_function():
 	if messagebox.askokcancel("Exit","Are you sure?"):
 		root.root.destroy()
+	else:
+		print("Nem lett bezarva")
 
 if __name__ == "__main__":
 	t1 = threading.Thread(target=th1)
